@@ -59,7 +59,7 @@
 .main-content {
   @include fonts(400, 14px, 1.71, 0.03em);
   color: var(---color-text-main);
-  // max-width: 270px;
+
   display: block;
   margin-bottom: 30px;
   @media screen and (min-width: 481px) {
