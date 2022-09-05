@@ -624,6 +624,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 769px) {
+  .team-section {
+    width: 100%;
+  }
+}
 
 .list-team {
   display: block;
@@ -700,11 +705,6 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) {
-  .container-team {
-    width: 1170px;
-  }
-}
 .client-title {
   font-weight: 700;
   font-size: 36px;
