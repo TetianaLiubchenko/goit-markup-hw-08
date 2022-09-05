@@ -1,0 +1,27 @@
+// -----------header-logo-------------
+.logo__link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  @include fonts(700, 26px, 1.19, 0.03em);
+
+  color: var(--color-logo);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo__header {
+  color: var(--color-logo-header);
+}
+
+// ------------------footer-logo-----------------
+.logo__accent {
+  color: var(---color-logo-footer);
+}
+.logo__link-footer {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  @include fonts(700, 26px, 1.19, 0.03em);
+
+  color: var(--color-logo);
+  margin-bottom: 20px;
+}

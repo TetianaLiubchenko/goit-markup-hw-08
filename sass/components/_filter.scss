@@ -1,0 +1,38 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+  @extend %margin-auto;
+  justify-content: center;
+}
+.filter__button {
+  display: inline-flex;
+  background: var(---color-portfolio-btn);
+  padding: 6px 22px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  @include fonts(500, 16px, 1.63, 0.03em);
+
+  text-align: center;
+
+  color: var(---color--portfolio-text-btn);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--color-bgd-btn);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(---color-title);
+  }
+}
+
+.btn-current {
+  background: var(---color-current);
+  color: var(---color-portfolio-btn);
+}

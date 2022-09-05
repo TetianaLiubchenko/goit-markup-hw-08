@@ -1,0 +1,60 @@
+// ---team-social-links--------------
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffff;
+  display: flex;
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+}
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+// ---------------footer-social-links------------
+
+.footer-networks_title {
+  font-family: "Roboto";
+  font-style: normal;
+  @include fonts(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-networks {
+  justify-content: baseline;
+  margin-left: 70px;
+  max-width: 206px;
+}
+.networks-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.networks-list__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffff;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
