@@ -2,17 +2,17 @@
   background: var(---color-team-section-bgd);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 769px) {
-    // width: 1170px;
-    // width: 100%;
-  }
+  // @media screen and (min-width: 769px) {
+  //   // width: 1170px;
+  //   // width: 100%;
+  // }
 
   // padding-top: 94px;
   // padding-bottom: 94px;
 }
 .list-team {
   display: block;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -21,7 +21,10 @@
 }
 
 .team-title {
-  @include fonts(700, 36px, 1.17, 0.03em);
+  @include fonts(700, 28px, 1.18, 0.03em);
+  @media screen and (min-width: 768px) {
+    @include fonts(700, 36px, 1.17, 0.03em);
+  }
   text-align: center;
   color: var(---text-color);
   margin-bottom: 50px;
@@ -57,11 +60,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 100%;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 30px * 3) / 4);
   }
 }

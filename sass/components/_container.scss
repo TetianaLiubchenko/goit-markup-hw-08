@@ -1,11 +1,29 @@
 .container {
   // width: 1200px;
-  // width: 100%;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  /*вирівнює по центру*/
   margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
+
+// section {
+//     max-width: 1600px;
+//
+
+//     padding-top: var(--padding-section-under-1200);
+//     padding-bottom: var(--padding-section-under-1200);
+// }
 
 .container-team {
   // width: 1200px;
@@ -15,17 +33,23 @@
 .container-footer {
   // width: 1200px;
   @extend %margin-auto;
-  text-align: start;
+  text-align: center;
   padding: 0 15px;
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
+    width: 480px;
     display: block;
-    text-align: center;
   }
-  // @media screen and (max-width: 768px) {
-  //   display: flex;
-  //   text-align: center;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 
-  // display: flex;
-  // align-items: baseline;
+// display: flex;
+// align-items: baseline;
+
+.container-services {
+  @extend %margin-auto;
 }
