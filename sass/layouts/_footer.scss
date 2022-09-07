@@ -1,26 +1,26 @@
-footer {
-  background: var(--background-color-main);
+.footer-frst {
   padding-top: 60px;
   padding-bottom: 60px;
-  // @extend %margin-auto;
-  width: 100%;
+  background: var(--background-color-main);
 }
 
 .container-footer {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: start;
     align-items: baseline;
-    text-align: left;
+    text-align: start;
+    padding: 0 15px;
+  }
+}
+.form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -28,6 +28,7 @@ footer {
 .footer-networks {
   margin-bottom: 60px;
 }
+
 .contacts-footer__email,
 .contacts-footer__adress {
   margin-bottom: 8px;
@@ -45,7 +46,6 @@ footer {
   }
 }
 
-/*--якщо прибрати стайл нормал текст стає курсивом*/
 .address {
   font-style: normal;
 }
@@ -59,52 +59,32 @@ footer {
 }
 
 .logo {
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-    max-widt: 354px;
-  }
-  @media screen and (min-width: 768px) {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     margin-right: 70px;
-    max-widt: 354px;
   }
 }
-//   @media screen and (min-width: 768px) {
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//     display: flex;
-//     justify-content: center;
-//     width: 100%;
-//   }
-// }
-.footer-tablet {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin-bottom: 60px;
-  }
+
+.footer-networks {
+  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    width: 437px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
 .subscription {
   @media screen and (min-width: 768px) {
-    display: inline-flex;
+    display: block;
     width: 450px;
-    height: 156px;
-    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
+    display: inline-block;
+    width: 574px;
+    margin: 0;
+    align-items: baseline;
     margin-left: auto;
-    // display: flex;
-    // justify-content: start;
-    // align-items: baseline;
-    // text-align: right;
-    // justify-content: end;
-    // width: 574px;
-    // // margin-left: auto;
-    // flex-direction: column;
   }
 }
 
@@ -114,14 +94,20 @@ footer {
   color: #ffffff;
   display: block;
   margin-bottom: 20px;
-  // @media screen and (min-width: 768px) {
-  //   display: inline-block;
-  //   flex-wrap: wrap;
-  //   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 20px;
+    text-align: start;
+  }
 }
 
 .subscription__input {
-  // width: 100%;
+  width: 100%;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -135,6 +121,14 @@ footer {
   @media screen and (min-width: 768px) {
     width: 450px;
     height: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    // margin-bottom: 0;
+    // margin-right: 12px;
+    width: 358px;
+    // height: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -155,11 +149,19 @@ footer {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+  }
 }
 
 .subscription__icon {
   display: inline-flex;
   margin-left: 10px;
+  align-items: center;
 }
 
 .backdrop {
