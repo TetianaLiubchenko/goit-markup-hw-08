@@ -286,6 +286,7 @@ img {
 
 /* header */
 .header {
+  width: 100%;
   background: var(--bacground-header);
   border: 1px solid #ececec;
 }
@@ -298,6 +299,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header-nav {
+    position: relative;
+  }
 }
 
 .nav-header__list .nav-header__item:not(:last-child) {
@@ -324,17 +330,19 @@ img {
 
 .nav-header {
   margin-left: 93px;
-}
-
-.contacts-header {
-  margin-left: auto;
-  gap: 30px;
+  display: none;
 }
 
 .contacts-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contacts-header {
+  margin-left: auto;
+  gap: 30px;
+  display: none;
 }
 
 .nav-header__link {
@@ -407,6 +415,163 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
+}
+
+.contacts-header__mobmenu {
+  margin-left: auto;
+}
+
+.logo {
+  margin-top: 16px;
+}
+
+.btn-open__mobmenu {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.btn-close__mobmenu {
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.mobmenu-contacts-header__email {
+  font-weight: 0;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobmenu-contacts-header__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.mobmenu {
+  position: fixed;
+  z-index: 1;
+  width: 100vh;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 767px) {
+  .mobmenu {
+    display: none;
+  }
+}
+
+.mobmenu-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 48px;
+  margin: 0;
+}
+
+.mobmenu-nav-header__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.current {
+  color: #2196f3;
+}
+
+.mobmenu-nav-header {
+  margin-bottom: 64px;
+}
+
+.mobmenu-nav-header__item {
+  margin-bottom: 32px;
+}
+
+.mobmenu-contacts-header__item :not(last-child) {
+  margin-bottom: 32px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mobmenu-soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobmenu-soc-link {
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobmenu-soc-item:not(last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  color: rgba(33, 33, 33, 0.2);
+  margin: 0;
 }
 
 .main-page {
