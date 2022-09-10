@@ -1,20 +1,20 @@
 .container {
-  // width: 1200px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  text-align: center;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    display: block;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+	// width: 1200px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	text-align: center;
+	@media screen and (min-width: 480px) {
+		width: 480px;
+		display: block;
+	}
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 
 // section {
@@ -26,30 +26,30 @@
 // }
 
 .container-team {
-  // width: 1200px;
+	// width: 1200px;
 
-  @extend %margin-auto;
+	@extend %margin-auto;
 }
 .container-footer {
-  // width: 1200px;
-  @extend %margin-auto;
-  text-align: center;
-  padding: 0 15px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    display: block;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+	// width: 1200px;
+	@extend %margin-auto;
+	text-align: center;
+	padding: 0 15px;
+	@media screen and (min-width: 480px) {
+		width: 480px;
+		display: block;
+	}
+	@media screen and (min-width: 768px) {
+		min-width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 
 // display: flex;
 // align-items: baseline;
 
 .container-services {
-  @extend %margin-auto;
+	@extend %margin-auto;
 }
