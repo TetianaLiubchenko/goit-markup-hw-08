@@ -71,13 +71,13 @@
         </ul>
 
 
-        <button type="button" class="btn-open__mobmenu" data-modal-open=""><svg class="contacts-header__iconsmenu" width="40" height="40">
+        <button type="button" class="btn-open__mobmenu js-open-menu"><svg class="contacts-header__iconsmenu" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
               </svg></button>
                
-      <div class="mobmenu">
+      <div class="mobmenu js-menu-container">
          <div class="container mobmenu-container">
-        <button type="button" class="btn-close__mobmenu" data-modal-close=""><svg class="contacts-header__iconsmenu" width="40" height="40">
+        <button type="button" class="btn-close__mobmen js-close-menu"><svg class="contacts-header__iconsmenu" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
               </svg></button>
                <nav class="mobmenu-nav-header">
@@ -315,8 +315,7 @@
                       ><svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        ></use></svg ></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link">
@@ -339,8 +338,8 @@
                       ><svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg>
+                      </a>
                   </li>
                 </ul>
               </div>
@@ -410,32 +409,28 @@
                       ><svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link">
                       <svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
+                        ></use></svg ></a>
                   </li>
                   <li class="social-item">
                     <a href=" " class="social-link"
                       ><svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                 </ul>
               </div>
@@ -506,8 +501,7 @@
                       ><svg class="social-icons" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        ></use></svg></a>
                   </li>
                   <li class="social-item">
                     <a href="" class="social-link">
@@ -855,8 +849,7 @@
               rows="10"
               class="modal-field"
             >
-Введіть текст</textarea
-            >
+Введіть текст</textarea>
           </div>
           <div class="input-field-policy">
             <input
@@ -865,8 +858,7 @@
               value="true"
               class="iput-check visually-hidden"
               id="user-policy"
-              required
-            />
+              required/>
             <label for="user-policy" class="check-text">
               <span class="checkbox-text">
                 <svg class="check-icon" width="16" height="15">
@@ -882,7 +874,13 @@
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
-     <script defer src="js/mobile-menu.js"></script>
+     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
