@@ -1,6 +1,6 @@
 .filter {
 	display: inline;
-	@media screen and (max-width: 480px) {
+	@media screen and (min-width: 769px) {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 8px;
@@ -9,9 +9,13 @@
 	@extend %margin-auto;
 	justify-content: center;
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 768px) {
+		margin-bottom: 15px;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: start;
-		flex-direction: column;
+		flex-direction: row;
+		gap: 8px;
 	}
 }
 
