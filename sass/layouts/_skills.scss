@@ -1,67 +1,71 @@
 .skills-icons-div {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .skills {
-  text-align: center;
-  background: var(---color-skills-bgd);
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+	text-align: center;
+	background: var(---color-skills-bgd);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@media screen and (min-width: 768px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .list-skills {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-}
+	@media screen and (min-width: 481px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	@media screen and (max-width: 480px) {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
-.skills-icons-div {
-  height: 120px;
-  margin-bottom: 30px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skills-item {
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 30px * 3) / 4);
-  }
-}
-.flex-element:nth-child(4n) {
-  margin-right: 0;
-}
+	.skills-icons-div {
+		height: 120px;
+		margin-bottom: 30px;
+		background: #f5f4fa;
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.skills-item {
+		@media screen and (min-width: 768px) {
+			flex-basis: calc((100% - 30px) / 2);
+		}
+		@media screen and (min-width: 1200px) {
+			flex-basis: calc((100% - 30px * 3) / 4);
+		}
+	}
+	.flex-element:nth-child(4n) {
+		margin-right: 0;
+	}
 
-.main-title {
-  display: block;
-  @include fonts(700, 14px, 1.14, 0.03em);
-  color: var(---text-color);
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  text-align: center;
-}
+	.main-title {
+		display: block;
+		@include fonts(700, 14px, 1.14, 0.03em);
+		color: var(---text-color);
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
+	}
 
-// @media screen and (min-width: 481px) {
-//
-// }
-.main-content {
-  @include fonts(400, 14px, 1.71, 0.03em);
-  color: var(---color-text-main);
-  display: block;
-  margin-bottom: 30px;
-  text-align: left;
+	// @media screen and (min-width: 481px) {
+	//
+	// }
+	.main-content {
+		@include fonts(400, 14px, 1.71, 0.03em);
+		color: var(---color-text-main);
+		display: block;
+		// margin-bottom: 30px;
+		text-align: left;
+	}
 }
-
-// @media screen and (min-width: 481px) {
-//   margin-bottom: 0;
-// }

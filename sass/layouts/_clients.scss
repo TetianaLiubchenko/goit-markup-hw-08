@@ -1,65 +1,75 @@
 .client-title {
-  @include fonts(700, 36px, 1.17, 0.03em);
-  text-align: center;
-
-  color: #212121;
-  margin-bottom: 50px;
+	@include fonts(700, 36px, 1.17, 0.03em);
+	text-align: center;
+	color: #212121;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		@include fonts(700, 28px, 1.18, 0.03em);
+	}
+	margin-bottom: 30px;
 }
 .clients-section {
-  // width: 100%;
-  // height: auto;
-  background: var(---color-skills-bgd);
-  padding-top: 94px;
-  padding-bottom: 94px;
+	// width: 100%;
+	// height: auto;
+	background: var(---color-skills-bgd);
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 }
 
 .clients-link {
-  display: flex;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  outline: transparent;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border: 1px solid #2196f3;
-    border-radius: 4px;
-  }
+	display: flex;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	outline: transparent;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		border: 1px solid #2196f3;
+		border-radius: 4px;
+	}
 }
 
 .clients-item {
-  width: 100%;
-  height: 92px;
-  @media screen and (max-width: 767px) {
-    width: calc((100% - 30px) / 2);
-  }
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 30px * 2) / 3);
-  }
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px * 5) / 6);
-  }
+	width: 100%;
+	height: 92px;
+	@media screen and (max-width: 767px) {
+		width: calc((100% - 30px) / 2);
+	}
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 30px * 2) / 3);
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px * 5) / 6);
+	}
 }
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
 }
 
 .clients-logo {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms;
-  .clients-link:hover &,
-  .clients-link:focus & {
-    fill: #2196f3;
-    align-items: center;
-  }
+	fill: #afb1b8;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms;
+	.clients-link:hover &,
+	.clients-link:focus & {
+		fill: #2196f3;
+		align-items: center;
+	}
 }
 .skills-icons {
-  display: flex;
+	display: flex;
 }

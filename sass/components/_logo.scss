@@ -7,9 +7,13 @@
 	color: var(--color-logo);
 	padding-top: 24px;
 	padding-bottom: 24px;
-	margin-left: 15px;
+	@media screen and (max-width: 480px) {
+		@include fonts(700, 24px, 1.17, 0.03em);
+	}
 }
-
+.logo {
+	align-items: baseline;
+}
 .logo__header {
 	color: var(--color-logo-header);
 }

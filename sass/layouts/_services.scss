@@ -1,47 +1,50 @@
 @media screen and (max-width: 1199px) {
-  .srv {
-    display: none;
-  }
-  @media screen and (max-width: 1200px) {
-    .srv {
-      padding-top: 94px;
-      padding-bottom: 94px;
+	.srv {
+		display: none;
+	}
+	// @media screen and (min-width: 1200px) {
+	// 	.srv {
+	// 		// padding-top: 94px;
 
-      max-width: 1200px;
-    }
-  }
+	// 		// max-width: 1200px;
+	// 	}
+	// }
 }
-
+.srv {
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 94px;
+	}
+}
 .services {
-  @include fonts(700, 36px, 1.17, 0.03em);
-  text-align: center;
-  color: var(---text-color);
-  margin-bottom: 50px;
+	@include fonts(700, 36px, 1.17, 0.03em);
+	text-align: center;
+	color: var(---text-color);
+	margin-bottom: 50px;
 }
 
 .list-services {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  // align-items: center;
-  gap: 30px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	// align-items: center;
+	gap: 30px;
 }
 // .services-item {
 //   display: flex;
 //   width: calc((100% - 30px) / 4);
 // }
 .services-text {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  @include fonts(700, 14px, 1.14, 0.03em);
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
-  width: calc((100% - 30px * 2) / 3);
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	@include fonts(700, 14px, 1.14, 0.03em);
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: rgba(47, 48, 58, 0.8);
+	width: calc((100% - 30px * 2) / 3);
 
-  min-height: 70px;
-  align-items: center;
-  justify-content: center;
+	min-height: 70px;
+	align-items: center;
+	justify-content: center;
 }
