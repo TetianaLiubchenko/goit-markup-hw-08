@@ -578,13 +578,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 40px;
-  height: 40px;
   background-color: transparent;
   border: none;
   color: #212121;
   cursor: pointer;
-  vertical-align: baseline;
   margin-left: auto;
   display: block;
 }
@@ -640,11 +637,10 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 48px 40px;
 }
 @media screen and (max-width: 767px) {
   .mobmenu-container {
-    padding-bottom: 48px;
-    padding-left: 25px;
     margin: 0;
   }
 }
@@ -729,19 +725,54 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.mobmenu-soc-item:not(last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  color: rgba(33, 33, 33, 0.2);
   margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.contacts-header__iconsmenu {
-  vertical-align: middle;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.mobmenu-soc-item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobmenu-soc-item:last-child {
+  border-right: 0;
+}
+
+.list-item {
+  margin-bottom: 12px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .mobmenu {
+    padding: 48px, 40px;
+    text-align: start;
+    width: 100%;
+    max-width: 480px;
+    overflow: scroll;
+  }
+}
+
+.mobmenu-contacts {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: auto;
+  position: sticky;
 }
 
 .main-page {
@@ -1561,9 +1592,9 @@ img {
   right: 8px;
   border-radius: 50%;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .close:hover, .close:focus {
