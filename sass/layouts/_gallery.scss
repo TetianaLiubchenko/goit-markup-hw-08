@@ -1,14 +1,21 @@
 .main-portfolio {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	@media screen and (max-width: 1199px) {
+		padding: 60px 0px;
+	}
 }
 .portfolio-gallery {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	gap: 30px;
+
 	@media screen and (min-width: 768px) {
 		display: flex;
-		// flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 30px;
 		// text-align: center;
 	}
 }

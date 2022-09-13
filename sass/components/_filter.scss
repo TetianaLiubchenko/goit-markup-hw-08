@@ -1,21 +1,35 @@
 .filter {
 	display: inline;
-	@media screen and (min-width: 769px) {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-		margin-bottom: 50px;
-	}
+	gap: 8px;
 	@extend %margin-auto;
 	justify-content: center;
-
-	@media screen and (max-width: 768px) {
-		margin-bottom: 15px;
+	@media screen and (max-width: 480px) {
+		margin-bottom: 40px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: start;
+		justify-content: flex-start;
 		flex-direction: row;
-		gap: 8px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 767px) {
+		flex-direction: row;
+		display: flex;
+		margin-bottom: 30px;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		flex-direction: row;
+		display: flex;
+
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		justify-content: center;
 	}
 }
 

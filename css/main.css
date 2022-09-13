@@ -128,24 +128,14 @@ img {
 
 .filter {
   display: inline;
+  gap: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 480px) {
   .filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .filter {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,12 +143,60 @@ img {
         flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 8px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .filter {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .filter {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -422,7 +460,6 @@ img {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-left: auto;
-    margin-right: 15px;
     gap: 30px;
   }
 }
@@ -498,8 +535,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-header__email,
 .contacts-header__tel {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     vertical-align: baseline;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -510,6 +546,18 @@ img {
 .contacts-header__tel:hover,
 .contacts-header__tel:focus {
   color: var(--color-logo);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header__email {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header__tel {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts-header__icons {
@@ -716,6 +764,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobmenu-soc-link {
@@ -816,6 +866,12 @@ img {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main-page {
     background-image: var(---var-bgd-main-gradient), url("../images/mobile/Header-img-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-page {
+    padding: 200px 0;
+    height: 600px;
   }
 }
 
@@ -1368,6 +1424,11 @@ img {
   }
 }
 
+.footer-tablet {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-tablet {
     margin-bottom: 60px;
@@ -1381,9 +1442,8 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     text-align: unset;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1587,7 +1647,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
-  width: 40px;
+  width: 30px;
+  height: 30px;
   top: 8px;
   right: 8px;
   border-radius: 50%;
@@ -1722,7 +1783,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1732,10 +1792,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .check-text {
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 1.65;
-    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-right: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1772,9 +1834,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .check-text .checkbox-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
   }
 }
 
@@ -1801,22 +1861,42 @@ img {
   margin-bottom: 30px;
 }
 
+.checkbox-text {
+  margin: 0;
+}
+
 .main-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .main-portfolio {
+    padding: 60px 0px;
+  }
+}
 
 .portfolio-gallery {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
   }
 }
 

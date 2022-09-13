@@ -43,7 +43,8 @@
 	align-items: center;
 	justify-content: center;
 	padding: 0;
-	width: 40px;
+	width: 30px;
+	height: 30px;
 
 	top: 8px;
 	right: 8px;
@@ -160,12 +161,16 @@
 	// font-style: normal;
 	@include fonts(400, 12px, 1.71, 0.03em);
 	color: #757575;
-	margin-left: 12px;
+	// margin-left: 12px;
 	display: flex;
 	// vertical-align: middle;
 	align-items: center;
 	@media screen and (max-width: 480px) {
-		@include fonts(400, 9px, 1.65, 0.03em);
+		// @include fonts(400, 9px, 1.65, 0.03em);
+		display: inline-block;
+		margin-right: 0;
+		align-items: baseline;
+		margin-left: 24px;
 	}
 	@media screen and (min-width: 768px) {
 		.check-text {
@@ -196,7 +201,7 @@
 		border-color: #2196f3;
 	}
 	@media screen and (max-width: 480px) {
-		display: flex;
+		display: inline-block;
 	}
 }
 
@@ -219,4 +224,7 @@
 }
 .input-field-policy {
 	margin-bottom: 30px;
+}
+.checkbox-text {
+	margin: 0;
 }
